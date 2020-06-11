@@ -1,0 +1,89 @@
+.vwrapper {
+  position: relative;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+}
+.vwrapper:hover .video-controls {
+  transform: translateY(1px);
+}
+.vwrapper .video {
+  display: block;
+  width: 100%;
+  background: #383838;
+}
+.vwrapper .video:hover {
+  cursor: pointer;
+}
+.vwrapper .video-controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(56, 56, 56, 0.7);
+  transform: translateY(100%) translateY(-5px);
+  transition: 0.2s;
+}
+.vwrapper .video-controls .playbar {
+  height: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(46, 46, 46, 0.7);
+  cursor: pointer;
+}
+.vwrapper .video-controls .playbar .fill {
+  height: 9px;
+  background: #ecc100;
+  border-bottom: 1px solid rgba(211, 172, 0, 0.7);
+}
+.vwrapper .video-controls .binding {
+  min-width: 100%;
+  position: relative;
+}
+.vwrapper .video-controls .binding button {
+  justify-content: center;
+  align-content: center;
+  width: 50px;
+  height: 30px;
+  background: #ecc100;
+  float: left;
+  cursor: pointer;
+}
+.vwrapper .video-controls .binding button.pause:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f04b";
+  display: inline-block;
+  font-size: 17px;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+.vwrapper .video-controls .binding button.play:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f04c";
+  display: inline-block;
+  font-size: 17px;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+.vwrapper .video-controls .binding .sound {
+  position: absolute;
+  height: 10px;
+  width: 100px;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: rgba(46, 46, 46, 0.7);
+}
+.vwrapper .video-controls .binding .sound:hover {
+  cursor: pointer;
+}
+.vwrapper .video-controls .binding .sound .volume {
+  height: 10px;
+  width: 100%;
+  background: #ecc100;
+}

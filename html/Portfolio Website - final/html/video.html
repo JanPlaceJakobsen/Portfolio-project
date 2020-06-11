@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <!-- Navbar items goes here-->
+        <li><a href="index.html" class="navItem">Home</a></li>
+        <li><a href="projects.html" class="navItem">Projects</a></li>
+        <li><a href="help.html" class="navItem">Help</a></li>
+        <li><a href="contact.html" class="navItem">Contact</a></li>
+        <li><a href="video.html" class="navitm active">Video PLayer</a></li>
+      </ul>
+    </div>
+    <!-- only the content of the actual page is put here!!!! -->
+    <div class="container">
+      <div class="contentwrapper">
+        <div class="vwrapper">
+          <video
+            class="video"
+            src="..\videos\Responsive_Portfolio_Website_[2]_-_Homepage_&_Main_Sass.mp4"
+          >
+            Sorry kiddo, if you're seeing this, then you cannot see the video in
+            your current browser. Switch browser and try again :)
+          </video>
+          <div class="video-controls">
+            <div class="playbar">
+              <div class="fill"></div>
+            </div>
+            <div class="binding">
+              <button id="play-pause" class="pause"></button>
+              <div class="sound">
+                <div class="volume"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <div class="footer"></div>
+  </body>
+</html>
